@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>jawab yaa</title>
+
+<script type="text/javascript">
+f=1
+function b1()
+{
+  alert("MAKASI JAWABANNYA")
+}
+function b()
+{
+	if(f==1)
+	    {
+		    Bn.style.top=400
+		    Bn.style.left=300
+		    f=2
+	    }
+	else if(f==2)
+	    {
+	        Bn.style.top=400
+            Bn.style.left=10
+            f=3
+	    }
+    else if(f==3) 
+        {	
+            Bn.style.top=370
+            Bn.style.left=166
+            f=1
+        }
+}
+</script>
+
+</head>
+<body>
+<h1> AKU TEGAR! </h1>
+<a href="https://www.google.com/search?q=orang+ganteng+sedunia&sxsrf=ALeKk00QI7H3xv1-blPINJ8xrpDFVFO-oQ:1627908084773&source=lnms&tbm=isch&sa=X&ved=2ahUKEwimrfqYrpLyAhVMqksFHUAmCUkQ_AUoAXoECAEQAw&biw=1366&bih=657">
+<img alt="farhan" src="logo1.png" width="25%">
+</a>
+<h1 style="#">GANTENG GA?</h1> 
+<div id="By"style="position:absolute;left:64px; top:370px; width:210px; height:210px;">
+<input type="button" value=" GAK " onClick="b1()"/>
+</div>
+<div ID="Bn" style="position:absolute;left:166px; top:370px; width:210px;">
+<input type="button" value=" GANTENG " onMouseOver="b()"/>
+</div>
+<h2>Click Gambar Untuk melihat 
+daftar orang Ganteng</h2>
+</body>
+</html>
