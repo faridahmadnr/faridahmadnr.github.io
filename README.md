@@ -1,6 +1,7 @@
 ## Welcome to GitHub Pages
 
 Dia pakai mark down -----------
+Halo
 
 You can use the [editor on GitHub](https://github.com/faridahmadnr/faridahmadnr.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
