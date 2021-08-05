@@ -1,0 +1,38 @@
+kalau ketambahan file atau folder baru, untuk menambahkan mereka:
+
+git add *
+
+untuk mengekalkan hasil editan maupun penambahan file baru
+
+git commit -a
+
+lalu muncul apliaksi vim
+
+ketik 
+
+G
+
+a
+
+ketik komentar
+
+ketik tombol esc
+
+ketik :wq
+
+lalu upload:
+
+git push
+
+
+Kalau cuma edit file yang sudah ada
+tidak nambah file (semua file sudah
+tercatat, hanya beberapa berubah)
+
+git commit -a
+
+lalu muncul aplikasi vim, lakukan seperti di atas (untuk menambahkan keterangan)
+
+sampai terakhir, upload
+
+git push
