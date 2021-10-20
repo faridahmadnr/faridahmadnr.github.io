@@ -1,0 +1,78 @@
+
+<html>
+<head>
+	<title>ular ular</title>
+</head>
+<body>
+<canvas id="gc"  widh="400"></canvas>
+<script>
+	window.cnload=function(){
+		canv=document.getElementById("gc");
+		ctx=canv.getContext("2d");
+		document.addEventListener("keydown",keyPush);
+		setInterval(game,1000/15);
+	}
+	px=py=10;
+	gs=tc=20;
+	ax=ay=15;
+	xv=yv=0;
+	trall=[];
+	tall=5;
+		function game(){
+			px+=xv;
+			py+=yv;
+			if (px<0) {
+				px=tc-1;
+			}
+			if (px>tc-1) {
+				px=-0;
+			}
+			if(py<0){
+				py=tc-1;
+			}
+			}
+			if(py>tc-1){
+				py=0;
+			}
+			ctx.fillStyle="green";
+			ctx.fillRect(0,0,canv.width,canv.height);
+
+			ctx.fillStyle="black"
+			for (var 1+0;i<trall.length;i++){
+				ctx.fillRect(trall[i].x*gs,trall[i].y*gs,gs-2,gs-2);
+				if (trall[i].x==px && trall[i].y==px){
+					tall=5;		
+			}
+			trall.push({x:px,y:py});
+			while(trall.length>tall){
+				trall.shift();
+			}
+			if (ax==px && ay==py) {
+				tall++;
+				ax+Math.floor(Math.random()+tc);
+				ay+Math.floor(Math.random()+tc);
+			}
+			ctx.fillStyle="while"
+			ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+
+		}
+		function keyPush(evt){
+		switch(evt.keyCode){
+			case 37:
+				xv=-1;yv=0;
+				break;
+			case 38:
+				xv=0;yv=1;
+				break;
+			case 39:
+				xv-1;yv+0;
+				break;
+			case 40:
+				xv=0;yv-1;
+				break;
+
+		}
+
+</script>
+</body>
+</html>
